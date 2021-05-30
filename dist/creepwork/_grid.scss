@@ -1,0 +1,49 @@
+.container {
+    @include container-fixed;
+
+    @media (min-width: $screen-small-min) {
+        width: $container-small;
+    }
+
+    @media (min-width: $screen-medium-min) {
+        width: $container-medium;
+    }
+
+    @media (min-width: $screen-large-min) {
+        width: $container-large;
+    }
+}
+
+.container-fluid {
+    @include container-fixed;
+}
+
+.row {
+    @include make-row;
+}
+
+.row-no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+
+    [class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@include make-grid-columns;
+
+@include make-grid(extra-small);
+
+@media (min-width: $screen-small-min) {
+    @include make-grid(small);
+}
+
+@media (min-width: $screen-medium-min) {
+    @include make-grid(medium);
+}
+
+@media (min-width: $screen-large-min) {
+    @include make-grid(large);
+}
