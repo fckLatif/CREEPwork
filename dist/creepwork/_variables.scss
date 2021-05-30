@@ -1,0 +1,33 @@
+$screen-extra-small: 480px !default;
+$screen-extra-small-min: $screen-extra-small !default;
+$screen-phone: $screen-extra-small-min !default;
+
+$screen-small: 768px !default;
+$screen-small-min: $screen-small !default;
+$screen-tablet: $screen-small-min !default;
+
+$screen-medium: 992px !default;
+$screen-medium-min: $screen-medium !default;
+$screen-desktop: $screen-medium-min !default;
+
+$screen-large: 1200px !default;
+$screen-large-min: $screen-large !default;
+$screen-large-desktop: $screen-large-min !default;
+
+$screen-extra-small-all-max: ($screen-small-min - 1) !default;
+$screen-small-max: ($screen-medium-min - 1) !default;
+$screen-medium-max: ($screen-large-min - 1) !default;
+
+$grid-columns: 16 !default;
+$grid-gutter-width: 30px !default;
+$grid-float-breakpoint: $screen-small-min !default;
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+
+$container-tablet: (720px + $grid-gutter-width) !default;
+$container-small: $container-tablet !default;
+
+$container-desktop: (940px + $grid-gutter-width) !default;
+$container-medium: $container-desktop !default;
+
+$container-large-desktop: (1140px + $grid-gutter-width) !default;
+$container-large: $container-large-desktop !default;
