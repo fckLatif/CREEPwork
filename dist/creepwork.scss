@@ -4,7 +4,9 @@
  * Licensed under MIT (https://github.com/CreepWannabe/creepwork/blob/main/LICENSE)
  */
 
- @import 'variables';
- @import 'mixins';
+ @import 'creepwork/variables';
+ @import 'creepwork/mixins';
 
- @import 'normalize';
+ @import 'creepwork/normalize';
+
+ @import 'creepwork/utilities'; 
